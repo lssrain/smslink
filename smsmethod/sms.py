@@ -40,7 +40,7 @@ def addsms():
             "chargeMode": 1, "chargeStore": [{"bdCode": "C001", "regionCode": "C010", "storeCode": "00133"}],
             "userType": "2", "submitCount": 1, "importFileIds": []}
     res = requests.post(url, json=json, headers=header, verify=False)
-    print(res.json())
+    # print(res.json())
     assert res.json()['code'] == 200
 
 
