@@ -65,8 +65,11 @@ def submit():
     提交审核
     :return:
     '''
+    id = runsql()
     url = 'https://sit-hlj.rainbowcn.com/api/v1/scrm-message/sms/custom/audit/submit'
-    json = {'id': runsql()}
+    json = {
+        'id': id
+    }
     res = requests.post(url, json=json, headers=header, verify=False)
     # print(res.json())
     assert res.json()['code'] == 200
