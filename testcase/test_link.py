@@ -18,7 +18,7 @@ loginfo = Log()
 
 @allure.epic('天虹scrm')
 @allure.feature('短信-小程序超链')
-class Link:
+class TestLink:
 
     @allure.title('短信生成小程序超链测试用例')
     @allure.story("结束日期小于未大于当前时间1min")
