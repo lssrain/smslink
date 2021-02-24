@@ -22,7 +22,7 @@ class Link:
 
     @allure.title('短信生成小程序超链测试用例')
     @allure.story("结束日期小于未大于当前时间1min")
-    def test_addshort_date(self):
+    def test_addshortdate(self):
         '''
         创建超链，结束日期小于未大于当前时间1min
         :return:
@@ -44,7 +44,7 @@ class Link:
 
     @allure.title('短信生成小程序超链测试用例')
     @allure.story("结束日期小于大于当前时间1year")
-    def test_addshort_year(self):
+    def test_addshortyear(self):
         '''
         创建超链，结束日期小于大于当前时间1year
         :return:
